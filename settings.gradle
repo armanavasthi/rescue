@@ -1,0 +1,3 @@
+rootProject.name = 'rescue'
+include 'request-service'
+include 'location-service'

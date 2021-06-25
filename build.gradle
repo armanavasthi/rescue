@@ -1,0 +1,17 @@
+ext {
+    rootGroup = 'com.rescue'
+    springBootVersion = '2.5.1'
+}
+
+group = rootGroup
+version ='1.0'
+
+allprojects {
+    apply plugin: 'idea'
+    apply plugin: 'java'
+
+    java {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+}
