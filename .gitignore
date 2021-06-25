@@ -1,0 +1,36 @@
+#Git
+.gitconfig*
+!/.gitignore
+
+# Eclipse
+.classpath
+.project
+.settings
+.metadata
+
+# IntelliJ Files
+.idea
+.iml
+
+# Build Files
+**/target/
+**/out/
+**/build/
+**/bin/
+*.log
+*.log.*
+*.gz
+*.tmp
+*.class
+
+dependency-reduced-pom.xml
+.gradle/
+build/
+
+Helm
+**/charts/*.tgz
+requirements.lock
+
+.cache
+.DS_Store
+*.swp

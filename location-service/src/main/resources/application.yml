@@ -1,0 +1,16 @@
+server:
+  port: 6060
+
+spring:
+  profile:
+    active: local
+  datasource:
+    testWhileIdle: true
+    timeBetweenEvictionRunsMillis: 60000
+    validationQuery: SELECT 1
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+    hibernate:
+      ddl-auto: update
