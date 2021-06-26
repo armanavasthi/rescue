@@ -1,8 +1,10 @@
 server:
-  port: 6060
+  port: 7060
 
 spring:
-  profile:
+  application:
+    name: request
+  profiles:
     active: local
   datasource:
     testWhileIdle: true
