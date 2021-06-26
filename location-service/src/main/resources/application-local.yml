@@ -3,3 +3,6 @@ spring:
     url: jdbc:mysql://localhost:3306/arman?useSSL=false
     username: root
     password: admin
+    testWhileIdle: true
+    timeBetweenEvictionRunsMillis: 60000
+    validationQuery: SELECT 1
