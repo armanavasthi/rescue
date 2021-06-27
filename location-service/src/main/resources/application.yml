@@ -2,8 +2,10 @@ server:
   port: 6060
 
 spring:
-  profile:
-    active: local
+  application:
+    name: location
+  profiles:
+    active: test #always use profile 'test' to pass github pr build. Locally 'local' can be used
   datasource:
     testWhileIdle: true
     timeBetweenEvictionRunsMillis: 60000
