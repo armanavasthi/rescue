@@ -5,7 +5,7 @@ spring:
   application:
     name: request
   profiles:
-    active: local
+    active: test #always use profile 'test' to pass github pr build. Locally 'local' can be used
   datasource:
     testWhileIdle: true
     timeBetweenEvictionRunsMillis: 60000
