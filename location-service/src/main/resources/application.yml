@@ -2,16 +2,17 @@ server:
   port: 6060
 
 spring:
+  application:
+    name: location
   profiles:
-    active: local
+    active: test #always use profile 'test' to pass github pr build. Locally 'local' can be used
+  datasource:
+    testWhileIdle: true
+    timeBetweenEvictionRunsMillis: 60000
+    validationQuery: SELECT 1
   jpa:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL5Dialect
     hibernate:
       ddl-auto: update
-
-#eureka:
-#  client:
-#    serviceUrl:
-#      defaultZone: http://localhost:8761/eureka
