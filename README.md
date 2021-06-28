@@ -9,4 +9,5 @@ Development is in its initial state, contributions are welcomed.
 - Create a database named `rescue` in the mysql server.<br>
 - Start Location Service.<br>
 - Start Request Service.<br>
-- Access using `localhost:6060/`<br>
+- Access using `localhost:7060/`<br>
+
