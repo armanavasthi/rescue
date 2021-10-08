@@ -16,6 +16,7 @@ public class RequestController {
     public ResponseEntity<Boolean> isWorking() {
 
         Boolean response = locationProxy.retrieveisLocationWorking();
+
         return new ResponseEntity(response, HttpStatus.OK);
 
     }

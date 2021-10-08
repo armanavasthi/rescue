@@ -5,7 +5,7 @@ spring:
   application:
     name: location
   profiles:
-    active: test #always use profile 'test' to pass github pr build. Locally 'local' can be used
+    active: local #always use profile 'test' to pass github pr build. Locally 'local' can be used
   datasource:
     testWhileIdle: true
     timeBetweenEvictionRunsMillis: 60000
@@ -16,3 +16,7 @@ spring:
         dialect: org.hibernate.dialect.MySQL5Dialect
     hibernate:
       ddl-auto: update
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    operationsSorter: method
